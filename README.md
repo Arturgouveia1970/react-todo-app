@@ -26,6 +26,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## 🖥️ Live Demo
 
 - [React Todo App](https://arturgouveia1970.github.io/react-todo-app/)
+
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
