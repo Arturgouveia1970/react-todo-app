@@ -1,40 +1,42 @@
-import React, { Component } from "react";
+import React, { useState } from "react"
 
-export default class InputTodo extends Component {
-  state = {
+const InputTodo = props => {
+  const [inputText, setInputText] = useState({
     title: "",
-  }
+  })
 
-  onChange = e => {
-    this.setState({
+  const onChange = e => {
+    setInputText({
+      ...inputText,
       [e.target.name]: e.target.value,
     })
   }
 
-  handleSubmit = e => {
-    e.preventDefault();
-    if (this.state.title.trim()) {
-      this.props.addTodoProps(this.state.title);
-      this.setState({
-        title: ""
+  const handleSubmit = e => {
+    e.preventDefault()
+    if (inputText.title.trim()) {
+      props.addTodoProps(inputText.title)
+      setInputText({
+        title: "",
       })
     } else {
-      alert("please write item")  
+      alert("Please write item")
     }
-  } 
-
-  render() {
-    return (
-      <form onSubmit={this.handleSubmit} className="form-container">
-        <input
-          type="text" className="input-text"
-          placeholder="Add todo..."
-          value={this.state.title}
-          name="title"
-          onChange={this.onChange}
-        />
-        <button className="input-submit" >Submit</button>
-      </form>
-    )
   }
+
+  return (
+    <form onSubmit={handleSubmit} className="form-container">
+      <input
+        type="text"
+        className="input-text"
+        placeholder="Add todo..."
+        value={inputText.titletitle}
+        name="title"
+        onChange={onChange}
+      />
+      <button className="input-submit">Submit</button>
+    </form>
+  )
 }
+
+export default InputTodo
