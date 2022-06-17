@@ -1,6 +1,6 @@
 
 ![](https://img.shields.io/badge/Microverse-blueviolet)
-# react-todo-app
+# React-todo-app
 
 
 > A single page application with a calculator
@@ -22,7 +22,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - GitHub: @Arturgouveia1970
 - Twitter: @Arturgouveia10
 - LinkedIn: artur-gouveia-323868197
-   
+
+## 🖥️ Live Demo
+
+- [React Todo App](https://arturgouveia1970.github.io/react-todo-app/)
+
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
