@@ -14,7 +14,7 @@ const Header = () => {
           fontWeight: '800',
           marginBottom: '2rem',
           lineHeight: '1em',
-          color: '#ececec',
+          color: 'orangered',
           textTransform: 'lowercase',
           textAlign: 'center',
         }}
