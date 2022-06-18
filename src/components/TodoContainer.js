@@ -1,7 +1,6 @@
 /* eslint-disable */
 import React, { useState, useEffect } from 'react';
-import { Switch } from 'react-router-dom';
-import { Route } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import { v4 as uuidv4 } from 'uuid';
 import Header from './Header';
 import InputTodo from './InputTodo';
@@ -88,7 +87,7 @@ const TodoContainer = () => {
         </Route>
       </Switch>
     </>
-  );
+  )
 };
 
 export default TodoContainer;

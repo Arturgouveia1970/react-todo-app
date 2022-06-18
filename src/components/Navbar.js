@@ -1,7 +1,11 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+/* eslint-disable react/button-has-type */
+import React, { useState } from 'react';
+import { NavLink } from 'react-router-dom';
+import { MdClose } from 'react-icons/md';
+import { FiMenu } from 'react-icons/fi';
 
-function Navbar() {
+const Navbar = () => {
+  const [navbarOpen, setNavbarOpen] = useState(false);
   const Links = [
     {
       id: 1,
@@ -14,18 +18,36 @@ function Navbar() {
       text: 'About',
     },
   ];
+  const handleToggle = () => {
+    setNavbarOpen(!navbarOpen);
+  };
+  const closeMenu = () => {
+    setNavbarOpen(false);
+  };
   return (
     <nav className="navBar">
-      <ul>
-        {Links.map(Link => {
-          return (
-            <li key={Link.id}>
-              <Link to={Link.path}>{link.text}</Link>
-            </li>  
-          )
-        })}
+      <button onClick={handleToggle}>
+        {navbarOpen ? (
+          <MdClose style={{ color: '#fff', width: '40px', height: '40px' }} />
+        ) : (
+          <FiMenu style={{ color: '#7b7b7b', width: '40px', height: '40px' }} />
+        )}
+      </button>
+      <ul className={`menuNav ${navbarOpen ? ' showMenu' : ''}`}>
+        {Links.map((link) => (
+          <li key={link.id}>
+            <NavLink
+              to={link.path}
+              activeClassName="active-link"
+              onClick={() => closeMenu()}
+              exact
+            >
+              {link.text}
+            </NavLink>
+          </li>
+        ))}
       </ul>
     </nav>
-  )
-}
+  );
+};
 export default Navbar;
