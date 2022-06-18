@@ -27,7 +27,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 - [React Todo App](https://arturgouveia1970.github.io/react-todo-app/)
 
--[heroku link](https://todolist-1970.herokuapp.com/)
+- [heroku link](https://todolist-1970.herokuapp.com/)
 
 ## Getting Started
 
