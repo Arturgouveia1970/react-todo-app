@@ -77,7 +77,7 @@ body {
 
 .navBar button {
   position: fixed;
-  left: 40px;
+  left: 650px;
   top: 40px;
   z-index: 10;
   cursor: pointer;
@@ -106,9 +106,9 @@ body {
 
 a {
   display: block;
-  padding: 10px 40px;
+  padding: 18px 40px 1px 40px;
   text-decoration: none;
-  color: #3fffd2;
+  color: #9d940ae3;
   text-transform: uppercase;
   font-weight: bold;
 }
@@ -121,17 +121,17 @@ a {
 
 .about__content {
   padding: 8rem 40px;
-  display: flex;
+  display: flex; 
 }
 
 .about__list {
   list-style: none;
   flex: 2;
-  margin-right: 15px;
+  margin-right: 10px;
 }
 
 .about__list a {
-  color: #9f9f9f;
+  color: #973d3d;
   text-transform: capitalize;
   padding: 20px 0;
   font-weight: 600;
