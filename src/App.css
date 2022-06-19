@@ -77,7 +77,7 @@ body {
 
 .navBar button {
   position: fixed;
-  left: 80%;
+  left: 90%;
   top: 40px;
   z-index: 10;
   cursor: pointer;
