@@ -77,7 +77,7 @@ body {
 
 .navBar button {
   position: fixed;
-  left: 650px;
+  left: 80%;
   top: 40px;
   z-index: 10;
   cursor: pointer;
@@ -96,7 +96,7 @@ body {
   height: 100vh;
   width: 0;
   overflow: hidden;
-  max-width: 290px;
+  max-width: 250px;
   z-index: 9;
 }
 
@@ -153,4 +153,5 @@ a {
 
 .main__content p {
   line-height: 25px;
+  margin-left: 25px;
 }
