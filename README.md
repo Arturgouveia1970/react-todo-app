@@ -3,7 +3,7 @@
 # React-todo-app
 
 
-> A single page application with a calculator
+> A single page to-do application
 
 ## Built With
 
